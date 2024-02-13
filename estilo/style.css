@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --cor1Verde: #8FA177;
+    --cor2Marrom: #a5866b34;
+    --cor3Subtitulo: #161a12;
+
+    --fontePadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonteTitulo: "Roboto", sans-serif;
+    --fonteCordel: "Sriracha", cursive, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor2Marrom);
+    font-family: var(--fontePadrao);
+}
+
+header {
+    background-color: var(--cor1Verde);
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-variant: small-caps;
+    font-size: 5vw;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+header p {
+    color: white;
+    padding-bottom: 50px;
+}
+
+header  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 4vh 0px 4vh 38px;
+    line-height: 2em;
+    font-size: 3.5vw;
+}
+
+section > p {
+    font-family: var(--fonteCordel);
+}
+
+section#imagem {
+    background: black url('../imagens/imagemParallax-cordel.jpg') right center no-repeat fixed;
+    background-size: cover;     
+    box-shadow: inset 6px 6px 1px 0px rgba(0, 0, 0, 0.113);
+}
+
+section#imagem > p {
+    background-color: rgba(0, 0, 0, 0.619);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+}
+
+article {
+    padding-bottom: 10px;
+    padding-left: 38px;
+    line-height: 30px;
+    font-family: var(--fonteTitulo);
+}
+
+article > h2 {
+    color: var(--cor3Subtitulo);
+    text-decoration: underline;
+    font-weight: bold;
+    padding-bottom: 14px;
+}
+
+
+aside > p {
+    padding-top: 10px;
+    padding-bottom: 90px;
+    font-weight: bold;
+}
+
+aside a {
+    color: rgba(0, 0, 0, 0.633);
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer > p >  a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
